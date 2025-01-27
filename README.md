@@ -17,7 +17,7 @@ python create_deadpool_entry.py <bounty_amount> < N integer (Optional) >
 If you have a solution for an integer with a bounty, announce that you have a solution as follows:
 
 ```
-python claim.py .py  <to_address>  <N in decimal> <N factor in decimal value> 
+python3 announce.py <burn_amount> <address> <N> <N factor>
 ```
 
 

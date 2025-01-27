@@ -11,20 +11,20 @@ Usage:
 
 To set a bounty on an integer, or add coins to an existing bounty, use the following:
 ```
-python create_deadpool_entry.py <bounty_amount> < N integer (Optional) >
+python create_deadpool_entry.py <bounty_amount> < N integer (decimal value) >
 ```
 
 If you have a solution for an integer with a bounty, announce that you have a solution as follows:
 
 ```
-python3 announce.py <burn_amount> <address> <N> <N factor>
+python3 announce.py <burn_amount> <reward_to_address> <N integer (decimal value)> <N factor (decimal value)>
 ```
 
 
 To claim your reward, you need to wait 100 blocks since your announcement and no more than 672 blocks, and you claim as follows:
 
 ```
-python claim.py .py  <to_address>  <N in decimal> <N factor in decimal value> 
+python claim.py .py  <reward_to_address>  <N integer (decimal) > <N factor (decimal value)> 
 ```
 
 If anyone would like to merge all three scripts and use a proper CLI package from python to integrate it into one python script we will accept the PR.
